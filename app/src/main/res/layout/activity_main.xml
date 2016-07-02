@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.casetable.casetable.LoginFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_connection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/container_toolbar"
+
+            android:alpha="0.8"
+            android:background="@android:color/black"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textView_noInternetConnection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:text="No Internet Connection."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/primary_text_dark" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView_noInternetConnection"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/textView_noInternetConnection"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container_body"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/container_toolbar"
+        />
+
+</RelativeLayout>
