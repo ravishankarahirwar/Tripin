@@ -1,0 +1,368 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+
+            <com.tripin.openweathemap.utils.RobotoLightTextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+
+            <com.tripin.openweathemap.utils.RobotoLightTextView
+                android:id="@+id/tv_lastupdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+
+            <com.tripin.openweathemap.utils.RobotoLightTextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_lastupdate"
+                android:paddingRight="5dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="60"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="40"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingRight="5dp">
+
+
+                <com.tripin.openweathemap.utils.RobotoLightTextView
+                    android:id="@+id/tv_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+
+                <com.tripin.openweathemap.utils.RobotoLightTextView
+                    android:id="@+id/tv_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_lastupdate"
+                    android:paddingRight="5dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+                <com.tripin.openweathemap.utils.RobotoLightTextView
+                    android:id="@+id/tv_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_lastupdate"
+                    android:paddingRight="5dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="@color/yellow"
+                    android:textSize="18sp" />
+
+                <com.tripin.openweathemap.utils.RobotoLightTextView
+                    android:id="@+id/tv_pressure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_lastupdate"
+                    android:paddingRight="5dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+                <com.tripin.openweathemap.utils.RobotoLightTextView
+                    android:id="@+id/tv_visiblity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_lastupdate"
+                    android:paddingRight="5dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+
+                <com.tripin.openweathemap.utils.RobotoLightTextView
+                    android:id="@+id/tv_tempmax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_lastupdate"
+                    android:paddingRight="5dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+                <com.tripin.openweathemap.utils.RobotoLightTextView
+                    android:id="@+id/tv_tempmini"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_lastupdate"
+                    android:paddingRight="5dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:orientation="vertical"
+                android:paddingLeft="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <com.tripin.openweathemap.utils.RobotoLightTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:gravity="left"
+                        android:text="Humidity"
+                        android:textStyle="bold"
+                        android:textColor="@color/yellow"
+                        android:textSize="18sp" />
+
+
+                    <com.tripin.openweathemap.utils.RobotoLightTextView
+
+                        android:id="@+id/tv_humidity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:gravity="left"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp">
+
+
+                    <com.tripin.openweathemap.utils.RobotoLightTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="50"
+                        android:gravity="left"
+                        android:text="Wind"
+                        android:textStyle="bold"
+                        android:textColor="@color/yellow"
+                        android:textSize="18sp" />
+
+
+                    <com.tripin.openweathemap.utils.RobotoLightTextView
+                        android:id="@+id/tv_wind"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="50"
+                        android:gravity="left"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp">
+
+
+                    <com.tripin.openweathemap.utils.RobotoLightTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:gravity="right"
+                        android:text="Sunrise"
+                        android:textStyle="bold"
+                        android:textColor="@color/yellow"
+                        android:textSize="18sp" />
+
+
+                    <com.tripin.openweathemap.utils.RobotoLightTextView
+
+                        android:id="@+id/tv_sunrise"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:gravity="right"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp">
+
+
+                    <com.tripin.openweathemap.utils.RobotoLightTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="50"
+                        android:gravity="right"
+                        android:text="Sunset"
+                        android:textStyle="bold"
+                        android:textColor="@color/yellow"
+                        android:textSize="18sp" />
+
+
+                    <com.tripin.openweathemap.utils.RobotoLightTextView
+                        android:id="@+id/tv_sunset"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="50"
+                        android:gravity="right"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:scrollbars="vertical" />
+
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        app:rippleColor="@color/colorPrimary"
+        app:backgroundTint="#1c5c75"
+        android:src="@android:drawable/ic_input_add" />
+
+</RelativeLayout>
+
+
+
+

@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">China State</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">Tripin</string>
     <string name="action_settings">Logout</string>
     <string name="action_newclient">Create Client</string>
     <string name="action_search">Search</string>
